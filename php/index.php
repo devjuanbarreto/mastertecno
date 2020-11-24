@@ -8,5 +8,6 @@
 <body>
 	<?php
 	include("mostrar.php");
+	?>
 </body>
 </html>

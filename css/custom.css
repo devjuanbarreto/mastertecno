@@ -7,3 +7,12 @@
 .margin-bottom li{
 	margin-bottom: 40px !important;
 }
+
+.footer-disable {
+	 padding: 0px;
+	 min-height: 0px;
+}
+
+.product_img {
+	width: 250px;
+}

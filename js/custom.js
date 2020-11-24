@@ -186,8 +186,7 @@ tpj(document).ready(function() {
 });
 
 /**===== End slider =====**/
-	
-	
+
 /** header fixed js **/
 
 $(window).scroll(function(){

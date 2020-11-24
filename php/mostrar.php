@@ -2,9 +2,9 @@
 
 	$inc=include ("conex.php");
 	if($inc){
-		$consulta = "SELECT * FROM resultados"
+		$consulta = "SELECT * FROM resultados";
 		$resultado = mysqli_query($conex, $consulta);
-		if($resulado){
+		if($resultado){
 			while($row = $resultado->fetch_array()){
 				$clientes_satisfechos = $row['clientes_satisfechos'];
 				$notebooks_reparados = $row['notebooks_reparados'];
@@ -13,10 +13,10 @@
 				?>
 
 					<div>
-						<h2><?php  php echo $clientes_satisfechos   ?></h2>
-						<h2><?php  php echo $notebooks_reparados   ?></h2>
-						<h2><?php  php echo $pc_escritorios_rep   ?></h2>
-						<h2><?php  php echo $so_instalados   ?></h2>
+						<h2><?php  echo $clientes_satisfechos   ?></h2>
+						<h2><?php  echo $notebooks_reparados   ?></h2>
+						<h2><?php  echo $pc_escritorios_rep   ?></h2>
+						<h2><?php  echo $so_instalados   ?></h2>
 					</div>
 
 				<?php

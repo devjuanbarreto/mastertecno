@@ -28,6 +28,12 @@
 <link rel="stylesheet" href="css/animate.css" />
 <!-- zoom effect -->
 <link rel='stylesheet' href='css/hizoom.css'>
+<style type="text/css" media="screen">
+  .fa-whatsapp {
+  font-size: 20px;
+}
+</style>
+
 <!-- end zoom effect -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -58,6 +64,7 @@
           <div class="float-left">
             <div class="social_icon">
               <ul class="list-inline">
+                <li class="social-icon wp"><a href="https://api.whatsapp.com/send?phone=+595981234567" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                 <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
                 <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
                 <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
@@ -67,20 +74,20 @@
             </div>
           </div>
           <div class="float-right">
-            <div class="make_appo"> <a class="btn white_btn" href="make_appointment.html">Envía un mensaje</a> </div>
+            <div class="make_appo"> <a class="btn white_btn" href="it_contact.html">Envía un mensaje</a> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- end header top -->
-  <!-- header bottom -->
+   <!-- header bottom -->
   <div class="header_bottom">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
           <!-- logo start -->
-          <div class="logo"> <a href="it_home.html"><img src="images/logos/it_logo.png" alt="logo" /></a> </div>
+          <div class="logo"> <a href="index.php"><img src="images/logos/logo_mastertecno.png" alt="logo" /></a> </div>
           <!-- logo end -->
         </div>
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
@@ -89,28 +96,18 @@
             <div id="navbar_menu">
               <ul class="first-ul">
                 <li> 
-                  <a class="active" href="index.html">Inicio</a>
+                  <a href="index.php">Inicio</a>
                 </li>
-                <li> <a>Menú</a>
+                <li> <a >Menú</a>
                   <ul>
-                    <li> <a href="">Login</a></li>
+                    <li> <a href="login.html">Login</a></li>
                     <li> <a href="it_mission_vision.html">Misión y Visión</a></li>
                     <li> <a href="it_organization.html">Organigrama</a></li>
                     <li> <a href="it_site_map.html">Mapa del Sitio</a></li>
                   </ul>
                 </li>
-                <li> <a href="it_service.html">Productos & Servicios</a>
-                  <ul>
-                    <li><a href="it_service_list.html">Lista de Servicios</a></li>
-                    <li><a href="it_shop.html">Lista de Productos</a></li>
-                  </ul>
-                </li>
-                <li> <a href="it_contact.html">Contáctenos</a></li>
-              </ul>
-            </div>
-            <div class="search_icon">
-              <ul>
-                <li><a href="#" data-toggle="modal" data-target="#search_bar"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li> <a href="it_shop.php">Productos y Servicios</a></li>
+                <li> <a class="active">Contáctenos</a></li>
               </ul>
             </div>
           </div>
@@ -132,7 +129,7 @@
             <div class="title-holder-cell text-left">
               <h1 class="page-title">Contáctenos</h1>
               <ol class="breadcrumb">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.php">Inicio</a></li>
                 <li class="active">Contáctenos</li>
               </ol>
             </div>
@@ -158,25 +155,38 @@
               <h4>Escríbenos</h4>
               <p>Nuestro objetivo es brindar el mejor servicio al cliente y responder a todas sus preguntas de manera oportuna.</p>
               <div class="form_section">
-                <form class="form_contant" action="index.html">
+                <form class="form_contant" action="send_message.php">
                   <fieldset>
                   <div class="row">
                     <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <input class="field_custom" placeholder="URL de tu sitio web" type="email" />
+                      <input class="field_custom" placeholder="URL de tu sitio web (Opcional)" type="email" />
                     </div>
                     <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <input class="field_custom" placeholder="Tu nombre" type="text" required />
+                      <input class="field_custom" placeholder="Tu nombre *" type="text" required />
                     </div>
                     <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <input class="field_custom" placeholder="Dirección de Email" type="email" required />
+                      <input class="field_custom" placeholder="Dirección de Email *" type="email" required />
                     </div>
                     <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <input class="field_custom" placeholder="Número de celular" type="text" required />
+                      <input class="field_custom" placeholder="Número de celular *" type="tel" required />
                     </div>
                     <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <textarea class="field_custom" placeholder="Mensaje" required ></textarea>
+                      <textarea class="field_custom" placeholder="Mensaje *" required ></textarea>
                     </div>
-                    <div class="center"><a class="btn main_bt" href="#">Enviar</a></div>
+
+                    <div class="row col-md-12">
+                      <div class="col-md-3"></div>
+                      <div class="d-flex flex-wrap col-md-6 justify-content-center">
+                        <div class="col-md-6 col-sm-12">
+                          <button type="submit"
+                            class="btn  btn-primary"
+                            id="btn-contacto"                            
+                            >Enviar</button>
+                        </div>
+                      </div>
+                      <div class="col-md-3"></div>
+                    </div>
+
                   </div>
                   </fieldset>
                 </form>
@@ -209,6 +219,39 @@
                 </div>
               </div>
             </div>
+
+          <!-- Modal para contactar-->
+
+    <div class="modal fade"
+      id="contacto"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              MasterTecno
+            </h5>
+            <button type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <p>Gracias por enviarnos tu mensaje, en breve un asesor respondera tus dudas.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-primary">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin Modal -->
 
           </div>
         </div>
@@ -245,11 +288,6 @@
 <footer class="footer_style_2">
   <div class="container-fuild">
     <div class="row">
-      <div class="map_section col-md-12">
-        <div id="map"></div>
-      </div>
-    </div>
-    <div class="row">
       <div class="footer_blog col-md-12">
         <div class="row">
           <div class="col-md-3">
@@ -274,9 +312,9 @@
               <h2>Servicios</h2>
             </div>
             <ul class="footer-menu">
-              <li><a href="it_data_recovery.html"><i class="fa fa-angle-right"></i> Recuperación de datos</a></li>
-              <li><a href="it_computer_repair.html"><i class="fa fa-angle-right"></i> Reparación de computadoras</a></li>
-              <li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Servicio para celulares</a></li>
+              <li><a href="it_shop.php#servicios"><i class="fa fa-angle-right"></i> Recuperación de datos</a></li>
+              <li><a href="it_shop.php#servicios"><i class="fa fa-angle-right"></i> Reparación de computadoras</a></li>
+              <li><a href="it_shop.php#servicios"><i class="fa fa-angle-right"></i> Servicio para celulares</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -284,15 +322,19 @@
               <h2>Contáctenos</h2>
             </div>
             <p> Gral. Elizardo Aquino esq. Tte. Leandro Pineda, N° 223, Guarambaré<br>
-              <span style="font-size:18px;"><a href="tel:+9876543210">+595981234567</a></span></p>
+              <span style="font-size:18px;">
+                <a href="https://api.whatsapp.com/send?phone=+595981234567" target="_blank"><i class="fa fa-whatsapp"></i> Whatsapp: +595981234567</a></span></p>
           </div>
         </div>
       <div class="row">
         <div class="col-md-12 justify-content-center">
                 <ul class="social_icons">
-                    <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-icon gp"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                   <li class="social-icon wp"><a href="https://api.whatsapp.com/send?phone=+595981234567" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
+                    <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
+                    <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
+                    <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+                    <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
                   </ul>
       </div>
       </div>
@@ -306,6 +348,7 @@
 <!-- end footer -->
 <!-- js section -->
 <script src="js/jquery.min.js"></script>
+<script src="js/popper.js/dist/umd/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!-- menu js -->
 <script src="js/menumaker.js"></script>
@@ -314,114 +357,10 @@
 <!-- custom js -->
 <script src="js/custom.js"></script>
 <script>
-
-      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-      // Australia.
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: {lat: 40.645037, lng: -73.880224},
-		  styles: [
-               {
-                 elementType: 'geometry',
-                 stylers: [{color: '#fefefe'}]
-               },
-               {
-                 elementType: 'labels.icon',
-                 stylers: [{visibility: 'off'}]
-               },
-               {
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#616161'}]
-               },
-               {
-                 elementType: 'labels.text.stroke',
-                 stylers: [{color: '#f5f5f5'}]
-               },
-               {
-                 featureType: 'administrative.land_parcel',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#bdbdbd'}]
-               },
-               {
-                 featureType: 'poi',
-                 elementType: 'geometry',
-                 stylers: [{color: '#eeeeee'}]
-               },
-               {
-                 featureType: 'poi',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#757575'}]
-               },
-               {
-                 featureType: 'poi.park',
-                 elementType: 'geometry',
-                 stylers: [{color: '#e5e5e5'}]
-               },
-               {
-                 featureType: 'poi.park',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#9e9e9e'}]
-               },
-               {
-                 featureType: 'road',
-                 elementType: 'geometry',
-                 stylers: [{color: '#eee'}]
-               },
-               {
-                 featureType: 'road.arterial',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#3d3523'}]
-               },
-               {
-                 featureType: 'road.highway',
-                 elementType: 'geometry',
-                 stylers: [{color: '#eee'}]
-               },
-               {
-                 featureType: 'road.highway',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#616161'}]
-               },
-               {
-                 featureType: 'road.local',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#9e9e9e'}]
-               },
-               {
-                 featureType: 'transit.line',
-                 elementType: 'geometry',
-                 stylers: [{color: '#e5e5e5'}]
-               },
-               {
-                 featureType: 'transit.station',
-                 elementType: 'geometry',
-                 stylers: [{color: '#000'}]
-               },
-               {
-                 featureType: 'water',
-                 elementType: 'geometry',
-                 stylers: [{color: '#c8d7d4'}]
-               },
-               {
-                 featureType: 'water',
-                 elementType: 'labels.text.fill',
-                 stylers: [{color: '#b1a481'}]
-               }
-             ]
-		});
-
-        var image = 'images/it_service/location_icon_map_cont.png';
-        var beachMarker = new google.maps.Marker({
-          position: {lat: 40.645037, lng: -73.880224},
-          map: map,
-          icon: image
-        });
-      }
-    </script>
-<!-- google map js -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
-<!-- end google map js -->
+    function abrirModal(){
+      $("#contacto").modal('toggle');
+    }     
+</script>
 <!-- zoom effect -->
 <script src='js/hizoom.js'></script>
 <script>
@@ -433,6 +372,6 @@
             width: 400,
             position: 'right'
         });
-    </script>
+</script>
 </body>
 </html>

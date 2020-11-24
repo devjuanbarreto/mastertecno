@@ -1,6 +1,4 @@
-?php
-
-	$conex = mysqli_connect("localhost","root","",mtdb);
-
-	
+<?php
+   							//host       usuario  contraseña  base de datos
+	$conex = mysqli_connect("localhost", "root", "admin123", "mastertecnodb");	
 ?>
