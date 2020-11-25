@@ -9,12 +9,9 @@
 		$resultado = mysqli_query($conex, $consulta)->fetch_array();
 
 		if($resultado){
-			echo "Se emcontro";
-			header("HTTP/1.1 302 Moved Temporarilly");
 			header("Location: admin.html");
 		}else {
-			header("HTTP/1.1 302 Moved Temporarilly");
-			header("Location: login.html");
+			header("Location: login.html?c=400");
 		}
 	}
 ?>
