@@ -1,0 +1,14 @@
+
+El archivo bk-mastertecnodb.sql es un script para crear la base de datos en MySQL
+y contiene los comandos necesarios para:
+- Crear la base de datos si no existiese.
+- Crear las tablas con todos los campos y sus respectivas relaciones (claves foraneas).
+- Insertar los registros a cada tabla.
+
+Después de esto ya se podra acceder a los datos desde el sitio web.
+
+NOTA: se debe verificar en los archivos .php los datos de conexión
+a la base de datos, ya que cada persona tendrá los datos de acceso de 
+acuerdo a su configuración, debe reemplazrlos según sea necesario
+utilizando su usuario y contraseña para poder realizar la conexión de forma
+exitosa, de lo contrario el sitio web no cumplira con algunas funcionalidades.
